@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#playerInfo {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+#player1, #player2 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
+
+#player1 input, #player2 input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid #5cbf31;
+    background-color: #4a95d7;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mode-btn.active {
+    background-color: #444;
+    color: white;
+    border-color: #222;
+}
+
+#difficultyContainer {
+    font-size: 16px;
+    margin: 5px;
+    display: none;
+}
+
+#winModal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#modalBox {
+    background: white;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+#turnIndicator {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
